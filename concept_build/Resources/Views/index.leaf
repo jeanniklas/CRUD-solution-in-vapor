@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>#(title)</title>
+</head>
+
+<body>
+  <h1>Cupcake Corner</h1>
+<p>Welcome to Cupcake Corner!</p>
+
+<ul>
+#for(name in names):
+    <li>#(name.title)</li>
+#endfor
+</ul>
+
+
+
+
+<h2>Add new cupcake</h2>
+<form method="post" action="/users">
+<p>Name: <input type="text" name="title" /></p>
+
+<button type="submit">Add</button>
+</form>
+<h2>Delete cupcake</h2>
+<form method="post" action="/todos">
+<p>Name: <input type="text" name="name" /></p>
+
+<button type="submit">Delete</button>
+</form>
+</body>
+</html>
