@@ -14,7 +14,7 @@ struct ExtendPathMiddleware: Middleware {
         return request.eventLoop.makeSucceededFuture(response)
         
     }
-//    maybe insert buffsize or wait with 2 sec
+
 }
 
 
