@@ -28,8 +28,6 @@ func routes(_ app: Application) throws {
 
         }
     
-//    create authorization with restriction
-//    create timestamp and delete record which is older than 24h
     app.post("todos"){req -> Response in
         let hello = try req.content.decode(Hello.self)
         Todo.query(on: req.db)
